@@ -11,11 +11,11 @@ int main() {
     scanf("%lf", &x);
 
     if(operation=='1')
-        printf("Sine of %lf times pi is %.3f", x, sin(x));
+        printf("Sine of %lf is %.3f", x, sin(x*M_PI/180));
     else if (operation=='2')
-        printf("Cosine of %lf times pi is %.3f", x, cos(x));
+        printf("Cosine of %lf is %.3f", x, cos(x*M_PI/180));
     else if (operation=='3')
-        printf("Tangent of %lf times pi is %.3f", x, tan(x));
+        printf("Tangent of %lf is %.3f", x, tan(x*M_PI/180));
     else if (operation=='4')
         printf("Exponential of %lf is %.3f", x, exp(x));
     else if (operation=='5')
