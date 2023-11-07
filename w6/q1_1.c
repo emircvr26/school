@@ -10,15 +10,7 @@ int main(void){
     for(i=1; i<=num; i++){
         factorial = factorial * i;   
     }
-    printf("For Loop:   Factorial is %d\n", factorial);
-
-
-    int factorial2 = 1;
-    while(i<=num){
-        factorial2 = factorial2 * i;
-        i++;
-    }
-    printf("While Loop: Factorial is %d\n", factorial);
+    printf("Factorial is %d\n", factorial);
 
     return 0;
 }
