@@ -8,7 +8,7 @@ main(){
     do{
         printf("Enter a number\n");
         scanf("%d", &num);
-        sum = sum + num;
+        sum = sum + num*num;
         i++;
 
     } while(num != -1);

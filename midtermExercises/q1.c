@@ -14,7 +14,7 @@ main(){
             printf("Not X Number");
             break;
         }
-        i++;
+        else {i++;}
     }
 
 }

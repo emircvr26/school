@@ -3,7 +3,7 @@
 
 
 double func(double x);
-main(){
+int main(){
 
     double m, a, b, tolerance;
 
@@ -13,18 +13,18 @@ main(){
     scanf("%lf", &tolerance);
     do{
         printf("f(a) = %lf\tf(b) = %lf\n", func(a), func(b));
+        m= (a+b)/2;
 
         if(func(a) * func(b) < 0){
-            m= (a+b)/2;
             printf("f(m) = %lf\n",func(m));
             if(func(a)*func(m)< 0)
                 b=m;
             else if(func(b)*func(m)< 0)
                 a=m;
         }
-        printf("The interval is = [%lf,%lf]\n", func(a), func(b));
-    } while(func(m) < tolerance);
-
+        printf("The interval is = [%lf,%lf]\n", a, b);
+    } while(fabs(func(m)) > tolerance);
+    return 0;
 }
 
 double func(double x){
