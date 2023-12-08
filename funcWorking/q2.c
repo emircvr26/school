@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-void reverseNumber(int a);
+int reverseNumber(int a);
 
 main(){
     int num;
     printf("Enter a number: \n");
     scanf("%d", &num);
-    reverseNumber(num);
+    printf("Reversed Number is: %d\n",reverseNumber(num));
 }
 
-void reverseNumber(a){
+int reverseNumber(a){
     
     int n=0,rev=0;
     int acopy = a;
@@ -27,5 +27,5 @@ void reverseNumber(a){
     	a = a/10;
     	--n;
 	}
-    printf("%d", rev);
+    return rev;
 }
