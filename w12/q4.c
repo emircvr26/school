@@ -8,19 +8,17 @@ int main(){
         A[i]= rand()%10;
         printf("%d element of A is %d\n", i, A[i]);
     }
+    int count = 0, num;
 
-    int sum = 0, num = 10+rand()%10;
-    printf("Number is %d\n", num);
+    printf("Enter a number");
+    scanf("%d", &num);
 
     for(i=0; i<10; i++){
-        sum += A[i];
+        if(A[i]<num)
+            count++;
     }
-    printf("Sum is %d\n", sum);
 
-    if(sum < num)
-        printf("WIN\n");
-    else
-        printf("LOST\n");
+    printf("%d element of A is less tan %d", count, num);
 
     return 0;
 }
